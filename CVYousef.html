@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية | يوسف عبدالرحمن حميد</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --primary-light: rgba(59, 130, 246, 0.1);
+            --primary-dark: #1e40af;
+            --primary-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            --text-color: #333;
+            --bg-color: #e0eaff;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+        }
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* تأثيرات الخلفية */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .bg-blob {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(30, 64, 175, 0.05) 100%);
+            filter: blur(40px);
+            z-index: -1;
+            animation: blob-float 20s infinite ease-in-out;
+        }
+        .bg-blob:nth-child(1) {
+            top: -200px;
+            right: -100px;
+        }
+        .bg-blob:nth-child(2) {
+            bottom: -200px;
+            left: -100px;
+            animation-delay: -5s;
+        }
+        @keyframes blob-float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, -50px) scale(1.1); }
+            50% { transform: translate(0, -100px) scale(0.9); }
+            75% { transform: translate(-50px, -50px) scale(1.05); }
+        }
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);        
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .cv-container:hover {
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2), 0 3px 12px rgba(59, 130, 246, 0.15);
+            transform: translateY(-5px);
+        }
+        .header {
+            background: var(--primary-gradient);
+            padding: 2.5rem 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        .section-title {
+            position: relative;
+            padding-right: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            color: var(--primary-dark);
+        }
+        .section-title::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0.25rem;
+            height: 70%;
+            background: var(--primary-color);
+            transform: translateY(-50%);
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+        .timeline-item {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .timeline-item:hover {
+            transform: translateX(-5px);
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+        .timeline-item:hover::before {
+            background: var(--primary-dark);
+            box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.3);
+        }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            right: 5px;
+            top: 18px;
+            width: 1px;
+            height: calc(100% - 8px);
+            background: #d1d5db;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(59, 130, 246, 0.15);
+        }
+        .skill-bar {
+            height: 8px;
+            background: rgba(229, 231, 235, 0.5);
+            border-radius: 4px;
+            overflow: hidden;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #60a5fa, #3b82f6);
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+        .skill-tag {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary-color);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin: 0.35rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+           
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+        }
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.15);
+        }
+        .contact-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            margin-left: 0.75rem;
+            box-shadow: 0 3px 10px rgba(59, 130, 246, 0.2);
+        }
+        .highlight-box {
+            background: rgba(59, 130, 246, 0.05);
+            border-right: 3px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+       /* تأثير التلاشي على الصفوف */
+/* الحالة الافتراضية للجدول - مطوي */
+#training-list.collapsed tr:nth-child(n+8) {
+    display: none; /* إخفاء كامل للصفوف بعد الصف السابع */
+}
+
+/* تدرج الشفافية للصفوف من 5 إلى 7 */
+#training-list.collapsed tr:nth-child(5) {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+#training-list.collapsed tr:nth-child(6) {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#training-list.collapsed tr:nth-child(7) {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* تأثير انتقالي للقسم الموسع */
+#expanded-certificates {
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#expanded-certificates.hidden {
+    display: none;
+}
+
+        .expand-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        }
+
+        .expand-btn:hover {
+        transform: translateY(-2px);
+        }
+
+        .expand-btn span {
+        font-size: 1rem;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                min-height: auto;
+                -webkit-backdrop-filter: none;
+                backdrop-filter: none;
+                
+                border: none;
+            }
+            .bg-pattern, .bg-blob {
+                display: none;
+            }
+            .glass-card, .contact-item, .skill-tag {
+                -webkit-backdrop-filter: none;
+                backdrop-filter: none;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="cv-container p-8 relative">
+
+        <!-- Header -->
+        <header class="relative z-10 border-b-2 border-gray-200 pb-6 mb-6">
+            <div class="flex justify-center items-center gap-2">
+                <div class="max-w-[360px] w-full pb-6">
+                    <img src="https://7ei2ai4qvm.ufs.sh/f/NKLCh9aej0JoCWlJcFgDwJRr8icS9WHOvNuDz5gh7x6ZU0oI" alt="يوسف عبدالرحمن حميد" class="w-full h-auto rounded-lg mx-auto">
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <h1 class="text-4xl font-bold text-blue-600 mb-1">يوسف عبدالرحمن حميد</h1>
+                        <h2 class="text-xl text-gray-600 mb-3">مصمم جرافيك | موشن جرافيك | Visual Artist</h2>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-calendar-alt ml-2 text-blue-500"></i> تاريخ الميلاد: 15 يناير 1986</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="contact-item">
+                            <i class="fas fa-phone ml-2 text-blue-500"></i>
+                            <span>0530796557</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope ml-2 text-blue-500"></i>
+                            <a href="mailto:yosfgfx@gmail.com" target="_blank" class="text-blue-600 hover:underline">yosfgfx@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-behance ml-2 text-blue-500"></i>
+                            <a href="https://behance.net/yosfgfx" target="_blank" class="text-blue-600 hover:underline">behance.net/yosfgfx</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section class="mb-8 relative z-10">
+            <h3 class="section-title text-xl text-blue-700">نبذة تعريفية</h3>
+            <p class="text-gray-700">
+                مصمم جرافيك وموشن جرافيك بخبرة تمتد لأكثر من 21 عامًا في مجال التصميم والإنتاج المرئي. أتمتع بشغف كبير بتحويل الأفكار إلى تصاميم إبداعية، أتميز بالقدرة على تصميم التقارير والعروض، وأعمال الفيديو الموشن جرافيك، وكذلك تطوير الهوية البصرية، لدي مهارات متقدمة في البرمجة، وأتقن التعامل مع أدوات الذكاء الاصطناعي التوليدية لتحسين كفاءة عملي. أسعى دائمًا لمواكبة أحدث التقنيات في مجالي، وأعمل على تحسين مهاراتي باستمرار من خلال التعلم المستمر والدورات التدريبية المتخصصة، والمشاركة في الورش والنقاشات والندوات، والاطلاع على كل جديد.
+            </p>
+        </section>
+
+        <!-- Two Column Layout for the rest -->
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Left Column -->
+            <div class="w-full md:w-2/5">
+                <!-- Education -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">المؤهلات الأكاديمية</h3>
+                    <ul class="space-y-3">
+                        <li class="timeline-item">
+                            <h4 class="font-semibold">بكالوريوس في الإعلام</h4>
+                            <p class="text-gray-600">جامعة العلوم والتكنولوجيا</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="font-semibold">دبلوم في التصميم الجرافيكي</h4>
+                            <p class="text-gray-600">معهد آزال الأمريكي الحديث (عامين)</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="font-semibold">دبلوم تقنية المعلومات</h4>
+                            <p class="text-gray-600">معهد آزال الأمريكي الحديث (عامين)</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="font-semibold">دورات تدريبية متخصصة</h4>
+                            <p class="text-gray-600">أكثر من 140 دورة مع شهادات إتمام في التصميم الجرافيكي، الذكاء الاصطناعي، وهندسة الأوامر المقدمة لنماذج الذكاء الاصطناعي</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">المهارات الوظيفية</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 ml-2"></i>
+                            <span>تصميم التقارير والعروض تقديمية بمستوى احترافي</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 ml-2"></i>
+                            <span>تصميم الهوية البصرية للقنوات التلفزيونية والشركات</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 ml-2"></i>
+                            <span>إنتاج محتوى مرئي مبتكر (موشن جرافيك، إعلانات، شارات برامج)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 ml-2"></i>
+                            <span>إدارة مشاريع تصميمية متكاملة (من الفكرة إلى التسليم النهائي)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 ml-2"></i>
+                            <span>دمج الذكاء الاصطناعي في سير العمل لتحسين الإنتاجية والإبداع</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="section-title text-xl text-blue-700 mt-6">المهارات التقنية</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-medium mb-1">برامج التصميم الجرافيكي</p>
+                            <div class="flex flex-col gap-2 mb-3">
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center">Adobe Photoshop</span>
+                                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/photoshop.svg" alt="Photoshop" class="w-8 h-8">
+                                </div>
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center">Illustrator</span>
+                                    <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/illustrator.svg" alt="Illustrator" class="w-8 h-8">
+                                </div>
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center">Premiere Pro</span>
+                                    <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/premiere-pro.svg" alt="Premiere Pro" class="w-8 h-8">
+                                </div>
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center">After Effects</span>
+                                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/after-effects.svg" alt="After Effects" class="w-8 h-8">
+                                </div>
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center">Audition</span>
+                                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/audition.svg" alt="Audition" class="w-8 h-8">
+                                </div>
+                                <div class="flex items-center justify-end gap-2"    >
+                                    <span class="skill-tag flex items-center">Microsoft Office</span>
+                                    <i class="fab fa-microsoft text-2xl"></i>
+                                </div>
+                                <div class="flex items-center justify-end gap-2">
+                                    <span class="skill-tag flex items-center" >All Apple Software</span>
+                                    <i class="fab fa-apple text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">البرمجة والحلول التقنية</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">الذكاء الاصطناعي</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title text-xl text-blue-700 mt-6">المهارات اللغوية</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">اللغة العربية</span>
+                                <span class="text-sm text-gray-600">اللغة الأم</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">اللغة الإنجليزية</span>
+                                <span class="text-sm text-gray-600">مستوى متقدم</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Committee Memberships -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">عضويات اللجان</h3>
+                    <ul class="space-y-2">
+                        <li class="timeline-item">
+                            <p>عضو لجنة تقييم المشاركات المقدمة في جائزة مسابقة وعي</p>
+                        </li>
+                        <li class="timeline-item">
+                            <p>عضو لجنة تقييم وتحسين الهوية البصرية لقناة سبأ الفضائية </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Professional Aspirations -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">التطلعات المهنية</h3>
+                    <p class="text-gray-700">
+                        أسعى لتحقيق المزيد من النمو المهني في مجال التصميم والإعلام الرقمي، من خلال تقديم حلول إبداعية مبتكرة تخدم جميع جوانب العملية الإنتاجية. أهدف إلى المساهمة في تطوير الأعمال الإبداعية التي تدمج بين التصميم والفن والتقنية بطريقة مبتكرة تحقق التأثير المطلوب.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full md:w-3/5">
+                <!-- Work Experience -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">الخبرات المهنية</h3>
+                    <div class="space-y-5">
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">المركز الوطني للوقاية من الآفات النباتية والأمراض الحيوانية ومكافحتها (وقاء)</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded-full shadow-md">2022 - حتى الآن</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">قطاع الصحة الحيوانية - المركز الرئيسي</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>العمل على تصميم التقارير والعروض والنشرات التوعوية والمساهمة في تنفيذ الحملات الإعلامية مع الفريق.</li>
+                                <li>تقديم الحلول التصميمية التي تعكس دور المركز.</li>
+                                <li>العمل على تنفيذ الأعمال العاجلة في الوقت القياسي.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">وزارة البيئة والمياه والزراعة</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded-full shadow-md">2017 - 2021</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">الإدارة العامة لخدمات الثروة الحيوانية - ديوان الوزارة</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>تصميم التقارير والعروض المرئية المتعلقة بالفعاليات.</li>
+                                <li>تصميم الإنفوجرافيك والتصاميم الإعلامية للنشرات عبر منصات التواصل الاجتماعي.</li>
+                                <li>تطوير المطبوعات الإعلانية (رول أب، بوب أب، ملصقات).</li>
+                                <li>دعم الفريق في تذليل المصاعب التقنية وتسريع الأعمال.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">شركة مؤشرات الأداء الاستشارية</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded-full shadow-md">2017</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">الرياض</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>تصميم العروض المالية (Proposals) والتقارير السنوية للشركة.</li>
+                                <li>تطوير الهوية البصرية والتصاميم الترويجية الخاصة بالشركة.</li>
+                            </ul>
+                        </div>
+
+                        
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">قناة دايركت الفضائية</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded-full shadow-md">2017 - 2018</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">الرياض</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>تصميم شارات وبرامج القناة.</li>
+                                <li>مونتاج الأعمال الفنية والبرامج التلفزيونية.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">قناة الصحراء</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded">2016 - 2017</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">الرياض</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>تطوير وتصميم الهوية البصرية لقناة الصحراء وقناة الإبل، بما يتناسب مع رؤية القناة وطبيعة المحتوى.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">مجموعة قنوات الساحة الفضائية</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded">2010 - 2016</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">الرياض</p>
+                            <ul class="text-gray-700 list-disc pr-5 space-y-1">
+                                <li>توليت مسؤولية تصميم الموشن جرافيك لكافة القنوات الأربع.</li>
+                                <li>تصميم إعلانات وبرامج تسويقية للعملاء.</li>
+                                <li>تطوير وتصميم الهوية البصرية للقنوات.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex flex-wrap justify-between items-start">
+                                <h4 class="font-bold text-blue-900">شركات الإنتاج المرئي</h4>
+                                <span class="text-sm bg-blue-600 text-white px-2 py-1 rounded">2004 - 2010</span>
+                            </div>
+                            <p class="text-gray-700">
+                                عملت في عدة شركات إنتاج مرئي، حيث اكتسبت خبرة مهنية واسعة في تصميم الجرافيك وإنتاج الفيديو, وشاركت في إنتاج محتوى مرئي لإعلانات تلفزيونية ومنصات رقمية وشركات كبرى.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Practical Skills -->
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">المهارات العملية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-blue-800 mb-2">التصميم والإنتاج</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-palette text-blue-500 ml-2 mt-1"></i>
+                                    <span>تصميم التقارير والعروض التقديمية المتحركة والثابتة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-film text-blue-500 ml-2 mt-1"></i>
+                                    <span>إنتاج أعمال موشن جرافيك احترافية</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chart-pie text-blue-500 ml-2 mt-1"></i>
+                                    <span>تصميم إنفوجرافيك جذاب ومؤثر</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-cut text-blue-500 ml-2 mt-1"></i>
+                                    <span>مونتاج الفيديو وتعديل الصوت</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-ad text-blue-500 ml-2 mt-1"></i>
+                                    <span>تصميم المنشورات الإعلانية الترويجية والتسويقية</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-800 mb-2">البرمجة والتقنية</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-code text-blue-500 ml-2 mt-1"></i>
+                                    <span>القدرة على تطوير الأدوات المساعدة لتسريع وتسهيل الأعمال الروتينية باستخدام HTML وJavaScript وPython والسكربتات ذاتية التنفيذ</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-robot text-blue-500 ml-2 mt-1"></i>
+                                    <span>مهارات في استخدام الأدوات الحديثة للذكاء الاصطناعي لتحسين الأداء الإبداعي</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card">
+                    <h3 class="section-title text-xl text-blue-700">الإنجازات والشهادات</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-blue-500 ml-2 mt-1"></i>
+                            <span>حاصل على شهادات إتمام دراسة أكثر من 140 دورة تدريبية مع شهادات إتمام في مجالات التصميم الجرافيكي والبيانات والذكاء الاصطناعي.</span>
+                        </li>
+                    </ul>
+                    
+                    <table class="w-full text-sm text-right">
+                        <thead class="bg-blue-800 rounded-t-lg overflow-hidden">
+                            <tr>
+                                <th class="px-4 py-2 text-white first:rounded-tr-lg last:rounded-tl-lg">الرقم</th>
+                                <th class="px-4 py-2 text-white">اسم الدورة</th>
+                                <th class="px-4 py-2 text-white">الجهة المانحة</th>
+                            </tr>
+                        </thead>
+                        <tbody id="training-list">
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">1</td>
+                                <td class="px-4 py-2">دبلوم تقنية المعلومات</td>
+                                <td class="px-4 py-2">معهد آزال الأمريكي</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">2</td>
+                                <td class="px-4 py-2">دبلوم جرافيك</td>
+                                <td class="px-4 py-2">معهد آزال الأمريكي</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">3</td>
+                                <td class="px-4 py-2">استخدام التقنيات الحديثة في الفواصل التلفزيونية</td>
+                                <td class="px-4 py-2">المركز العربي للتدريب الإذاعي والتلفزيوني بدمشق - جامعة الدول العربية</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">4</td>
+                                <td class="px-4 py-2">شهادة خبرة</td>
+                                <td class="px-4 py-2">ALSAHA TV</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">5</td>
+                                <td class="px-4 py-2">الإدارة الفعالة للوقت</td>
+                                <td class="px-4 py-2">جامعة الفيصل</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">6</td>
+                                <td class="px-4 py-2">الذكاء العاطفي (Emotional Intelligence)</td>
+                                <td class="px-4 py-2">جامعة الفيصل</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">7</td>
+                                <td class="px-4 py-2">المونتاج رؤى تقنية وإبداعية الجزيرة التعليمية</td>
+                                <td class="px-4 py-2">University of California</td>
+                            </tr>
+    </tbody>
+</table>
+<div class="expand-btn mt-4">
+    <button class="bg-blue-100 hover:bg-blue-200 text-blue-800 font-bold py-2 px-4 rounded-full transition-all duration-300 flex items-center" id="expand-button">
+        <span id="expand-arrow" class="ml-2 text-lg">↓</span>
+        <span id="expand-text">عرض المزيد</span>
+    </button>
+</div>
+</section>
+
+<section class="mb-8 bg-gray-50 p-5 rounded-lg shadow-sm relative z-10 glass-card hidden" id="expanded-certificates">
+<table class="w-full text-sm text-right">
+    <tbody>
+        <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+            <td class="px-4 py-2">8</td>
+            <td class="px-4 py-2">English Grammar Specialization (3 courses)</td>
+            <td class="px-4 py-2">University of California</td>
+        </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">9</td>
+                                <td class="px-4 py-2">Questions, Present Progressive and Future Tenses</td>
+                                <td class="px-4 py-2">University of California</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">10</td>
+                                <td class="px-4 py-2">Word Forms and Simple Present Tense</td>
+                                <td class="px-4 py-2">University of California</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">11</td>
+                                <td class="px-4 py-2">Business Writing الكتابة في مجال الأعمال</td>
+                                <td class="px-4 py-2">University of Colorado</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">12</td>
+                                <td class="px-4 py-2">Design Principles & Software Overview</td>
+                                <td class="px-4 py-2">University of Colorado</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">13</td>
+                                <td class="px-4 py-2">Fundamentals of Graphic Design</td>
+                                <td class="px-4 py-2">California Art Institute</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">14</td>
+                                <td class="px-4 py-2">DRB-EL-027-SMAN-01-00-AR-3rd</td>
+                                <td class="px-4 py-2">Doroob</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">15</td>
+                                <td class="px-4 py-2">DRB-EL-PD1-009-EN01-00-00-En-2ed-002</td>
+                                <td class="px-4 py-2">Doroob</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">16</td>
+                                <td class="px-4 py-2">Leading Change</td>
+                                <td class="px-4 py-2">CMT House</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">17</td>
+                                <td class="px-4 py-2">Managing Time</td>
+                                <td class="px-4 py-2">CMT House</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">18</td>
+                                <td class="px-4 py-2">علم التصميم الجرافيكي</td>
+                                <td class="px-4 py-2">Edraak</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">19</td>
+                                <td class="px-4 py-2">Graphic Design Principles</td>
+                                <td class="px-4 py-2">Edraak</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">20</td>
+                                <td class="px-4 py-2">Infographic</td>
+                                <td class="px-4 py-2">Edraak</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">21</td>
+                                <td class="px-4 py-2">Introduction to Generative AI</td>
+                                <td class="px-4 py-2">Google Cloud</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">22</td>
+                                <td class="px-4 py-2">Generative AI: Prompt Engineering Basics</td>
+                                <td class="px-4 py-2">IBM</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">23</td>
+                                <td class="px-4 py-2">Solving Problems with Creative and Critical Thinking</td>
+                                <td class="px-4 py-2">IBM</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">24</td>
+                                <td class="px-4 py-2">UI/UX Design</td>
+                                <td class="px-4 py-2">IBM</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">25</td>
+                                <td class="px-4 py-2">Introduction to KPIs: Measuring Success in Business</td>
+                                <td class="px-4 py-2">Starweaver</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">26</td>
+                                <td class="px-4 py-2">Effective Corporate Communication: Principles & Evolution</td>
+                                <td class="px-4 py-2">Starweaver</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">27</td>
+                                <td class="px-4 py-2">Work Smarter with Microsoft PowerPoint</td>
+                                <td class="px-4 py-2">Microsoft</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">28</td>
+                                <td class="px-4 py-2">A Comprehensive Negotiation</td>
+                                <td class="px-4 py-2">Northwestern University</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">29</td>
+                                <td class="px-4 py-2">High Performance Collaboration: Leadership Teamwork and Negotiation</td>
+                                <td class="px-4 py-2">Northwestern University</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">30</td>
+                                <td class="px-4 py-2">Adobe Content Creator Professional</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">31</td>
+                                <td class="px-4 py-2">Design Fundamentals</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">32</td>
+                                <td class="px-4 py-2">Adobe Social Media Content and Strategy</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">33</td>
+                                <td class="px-4 py-2">Generative AI Content Creation</td>
+                                <td class="px-4 py-2">Adobe/Coursera</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">34</td>
+                                <td class="px-4 py-2">Document Design</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">35</td>
+                                <td class="px-4 py-2">Graphic Design</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">36</td>
+                                <td class="px-4 py-2">Image Editing</td>
+                                <td class="px-4 py-2">Adobe</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">37</td>
+                                <td class="px-4 py-2">3dsMax 2017 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">38</td>
+                                <td class="px-4 py-2">Adobe Audition: Mixing Music and Dialog</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">39</td>
+                                <td class="px-4 py-2">Adobe Illustrator: Variable Data</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">40</td>
+                                <td class="px-4 py-2">Adobe Pen Tool: Mastery</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">41</td>
+                                <td class="px-4 py-2">Advanced Accessible PDFs (2015)</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">42</td>
+                                <td class="px-4 py-2">Advanced Branding</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">43</td>
+                                <td class="px-4 py-2">After Effects: Bouncing Animated 3D Sphere</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">44</td>
+                                <td class="px-4 py-2">After Effects Apprentice: 17 Video Walls in Cinema 4D Lite</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">45</td>
+                                <td class="px-4 py-2">After Effects CC 2015 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">46</td>
+                                <td class="px-4 py-2">After Effects CC 2018 Essential Training: Motion Graphics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">47</td>
+                                <td class="px-4 py-2">After Effects CC 2018 Essential Training: The Basics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">48</td>
+                                <td class="px-4 py-2">After Effects Guru: Advanced Photoshop Integration</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">49</td>
+                                <td class="px-4 py-2">After Effects Guru: Expressions</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">50</td>
+                                <td class="px-4 py-2">After Effects Guru: Integrating Type into Video Volume 2</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">51</td>
+                                <td class="px-4 py-2">After Effects Guru: Plugins You Should Know</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">52</td>
+                                <td class="px-4 py-2">After Effects Guru: Templates for Premiere Pro and After Effects</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">53</td>
+                                <td class="px-4 py-2">After Effects Scripts & Tips: 1 Animation Techniques</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">54</td>
+                                <td class="px-4 py-2">After Effects Scripts & Tips: 2 Design Theory & Animation</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">55</td>
+                                <td class="px-4 py-2">Animating in Photoshop</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">56</td>
+                                <td class="px-4 py-2">Animation Foundations: Drawing Cartoon Characters</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">57</td>
+                                <td class="px-4 py-2">Animation Foundations: Fundamentals</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">58</td>
+                                <td class="px-4 py-2">Artist at Work: Creating Depth of Field</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">59</td>
+                                <td class="px-4 py-2">Artist at Work: From Sketch to Finished Vector Illustration</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">60</td>
+                                <td class="px-4 py-2">Audio for Video: Production and Post Sound Techniques</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">61</td>
+                                <td class="px-4 py-2">Audition CC 2018 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">62</td>
+                                <td class="px-4 py-2">Branding for Designers</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">63</td>
+                                <td class="px-4 py-2">Breaking Out of a Rut</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">64</td>
+                                <td class="px-4 py-2">Cinema 4D and After Effects: Logo Animation and Compositing</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">65</td>
+                                <td class="px-4 py-2">Color and Cultural Connections</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">66</td>
+                                <td class="px-4 py-2">Color for Design and Art</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">67</td>
+                                <td class="px-4 py-2">Color Trends</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">68</td>
+                                <td class="px-4 py-2">Creating and Using Textures for Design</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">69</td>
+                                <td class="px-4 py-2">Creating Icons with Photoshop</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">70</td>
+                                <td class="px-4 py-2">Creating Online Videos with the iPhone</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">71</td>
+                                <td class="px-4 py-2">Creative Collaboration</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">72</td>
+                                <td class="px-4 py-2">Creativity Boot Camp</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">73</td>
+                                <td class="px-4 py-2">Designing an Icon with Affinity Designer</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">74</td>
+                                <td class="px-4 py-2">Drawing and Painting in Photoshop</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">75</td>
+                                <td class="px-4 py-2">Drawing Vector Graphics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">76</td>
+                                <td class="px-4 py-2">Drawing Vector Graphics: Color and Detail</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">77</td>
+                                <td class="px-4 py-2">Drawing Vector Graphics: Iconography</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">78</td>
+                                <td class="px-4 py-2">Drawing Vector Graphics: Painting with Vectors</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">79</td>
+                                <td class="px-4 py-2">Drawing Vector Graphics: Patterns</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">80</td>
+                                <td class="px-4 py-2">Graphic Design Careers: First Steps</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">81</td>
+                                <td class="px-4 py-2">Graphic Design Foundations: Layout and Composition (2013)</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">Graphic Design Foundations: Typography</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">83</td>
+                                <td class="px-4 py-2">Houdini: Advanced Motion Graphics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">84</td>
+                                <td class="px-4 py-2">Houdini: Particles</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">85</td>
+                                <td class="px-4 py-2">Ideas that Resonate</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">86</td>
+                                <td class="px-4 py-2">Illustrator 2021 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">87</td>
+                                <td class="px-4 py-2">Illustrator CC 2015 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">88</td>
+                                <td class="px-4 py-2">Illustrator Draw: Working Mobile</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">89</td>
+                                <td class="px-4 py-2">Improving Your Thinking</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">90</td>
+                                <td class="px-4 py-2">InDesign: Data Merge and Database Publishing</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">91</td>
+                                <td class="px-4 py-2">InDesign 2021 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">92</td>
+                                <td class="px-4 py-2">Introducing Illustrator (2013)</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">93</td>
+                                <td class="px-4 py-2">Introduction to 3D</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">94</td>
+                                <td class="px-4 py-2">Introduction to Graphic Design</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">95</td>
+                                <td class="px-4 py-2">Introduction to Video Editing</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">96</td>
+                                <td class="px-4 py-2">Keynote Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">97</td>
+                                <td class="px-4 py-2">Learning 2D Animation Principles</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">98</td>
+                                <td class="px-4 py-2">Learning Adobe Animate CC</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">99</td>
+                                <td class="px-4 py-2">Learning Astute Graphics for Illustrator</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">100</td>
+                                <td class="px-4 py-2">Learning Brainstorming</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">101</td>
+                                <td class="px-4 py-2">Learning Cinema 4D S22</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">102</td>
+                                <td class="px-4 py-2">Learning Logo Design (2013)</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">103</td>
+                                <td class="px-4 py-2">Learning Motion Graphics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">104</td>
+                                <td class="px-4 py-2">Learning Video Production and Editing</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">105</td>
+                                <td class="px-4 py-2">Managing Your Emotions at Work</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">106</td>
+                                <td class="px-4 py-2">Migrating from Flash to ToonBoom Harmony</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">107</td>
+                                <td class="px-4 py-2">Mograph Techniques: Creating a Sports Bumper</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">108</td>
+                                <td class="px-4 py-2">Mograph Techniques: Shape Animation in After Effects</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">109</td>
+                                <td class="px-4 py-2">Motion Graphics Loops: 2 After Effects Techniques</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">110</td>
+                                <td class="px-4 py-2">Photoshop 2021 Essential Training: The Basics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">111</td>
+                                <td class="px-4 py-2">Photoshop 2021 New Features</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">112</td>
+                                <td class="px-4 py-2">Photoshop 2021 One-on-One: Fundamentals</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">113</td>
+                                <td class="px-4 py-2">Photoshop CC 2015 One-on-One: Fundamentals</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">114</td>
+                                <td class="px-4 py-2">Premiere Pro CC 2019 Essential Training: The Basics</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">115</td>
+                                <td class="px-4 py-2">Prime Studio Product Design</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">116</td>
+                                <td class="px-4 py-2">Project Management for Creative Projects</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">117</td>
+                                <td class="px-4 py-2">Rapid Prototyping for Product Design</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">118</td>
+                                <td class="px-4 py-2">Rhino 5 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">119</td>
+                                <td class="px-4 py-2">Rhino and V-Ray: Product Design Rendering</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">120</td>
+                                <td class="px-4 py-2">Sharon Ross: Character Designer for 2D Animation</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">121</td>
+                                <td class="px-4 py-2">Sketching for Product Design and AEC</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">122</td>
+                                <td class="px-4 py-2">SketchUp 2020 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">123</td>
+                                <td class="px-4 py-2">SOLIDWORKS: Advanced Simulation</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">124</td>
+                                <td class="px-4 py-2">The Five-Step Creative Process</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">125</td>
+                                <td class="px-4 py-2">ToonBoom Harmony Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">126</td>
+                                <td class="px-4 py-2">Unreal Engine: Motion Graphics Techniques</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">127</td>
+                                <td class="px-4 py-2">Video and Audio for Designers with Creative Cloud: Part 1</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">128</td>
+                                <td class="px-4 py-2">Video Foundations: Cameras and Shooting</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">129</td>
+                                <td class="px-4 py-2">Video Production: Location Audio Recording</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">130</td>
+                                <td class="px-4 py-2">Video Production: Location Lighting</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">131</td>
+                                <td class="px-4 py-2">Video Production: Promotional Videos</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">132</td>
+                                <td class="px-4 py-2">Video Script Writing</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">133</td>
+                                <td class="px-4 py-2">VR Motion Graphics with Unreal Engine</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">134</td>
+                                <td class="px-4 py-2">Wacom Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">135</td>
+                                <td class="px-4 py-2">What is Graphic Design</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">136</td>
+                                <td class="px-4 py-2">ZBrush 2020 Essential Training</td>
+                                <td class="px-4 py-2">Lynda.com</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">137</td>
+                                <td class="px-4 py-2">Apple Keynote (3 Courses) </td>
+                                <td class="px-4 py-2">John Martins form Apple a Day</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">138</td>
+                                <td class="px-4 py-2">Using Formulas in Apple Pages</td>
+                                <td class="px-4 py-2">John Martins form Apple a Day</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">139</td>
+                                <td class="px-4 py-2">Create CHARTS in Apple Numbers</td>
+                                <td class="px-4 py-2">John Martins form Apple a Day</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">140</td>
+                                <td class="px-4 py-2">formulas in Apple Numbers</td>
+                                <td class="px-4 py-2">John Martins form Apple a Day</td>
+                            </tr>
+                            <tr class="hover:bg-[var(--bg-color)] transition-colors border-b border-[var(--bg-color)]">
+                                <td class="px-4 py-2">141</td>
+                                <td class="px-4 py-2">Share Data Through the Art of Visualization</td>
+                                <td class="px-4 py-2">Google</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </div>
+    <script>
+// إضافة فئة collapsed للجدول عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', function() {
+    const trainingList = document.getElementById("training-list");
+    const expandedCertificates = document.getElementById("expanded-certificates");
+    trainingList.classList.add("collapsed");
+    
+    // إضافة مستمع حدث للزر
+    document.getElementById("expand-button").addEventListener("click", function() {
+        const arrow = document.getElementById("expand-arrow");
+        const expandText = document.getElementById("expand-text");
+        
+        // إذا كانت الصفوف مخفية
+        if (trainingList.classList.contains("collapsed")) {
+            trainingList.classList.remove("collapsed");
+            expandedCertificates.classList.remove("hidden");
+            arrow.textContent = "↑"; // تغيير السهم للأعلى عند التوسيع
+            expandText.textContent = "عرض أقل";
+        } else {
+            trainingList.classList.add("collapsed");
+            expandedCertificates.classList.add("hidden");
+            arrow.textContent = "↓"; // إعادة السهم للأسفل عند التخفيف
+            expandText.textContent = "عرض المزيد";
+        }
+    });
+});
+</script>
+
+</script>
+</body>
+</html>
